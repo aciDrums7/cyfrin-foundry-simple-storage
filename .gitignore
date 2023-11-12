@@ -13,7 +13,7 @@ docs/
 # Dotenv file
 .env
 
-#Doker
+#Docker
 Dockerfile
 docker-compose.yml
 .devcontainer/devcontainer.json
