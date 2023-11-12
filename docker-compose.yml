@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app:
+    image: edoardocarradori/foundry-silicon:latest
+    container_name: cyfrin-foundry-simple-storage
+    volumes:
+      - .:/usr/src/app
+    # user: root

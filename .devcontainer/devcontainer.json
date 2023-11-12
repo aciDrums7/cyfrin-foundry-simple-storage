@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+  "name": "cyfrin-foundry-simple-storage",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "app",
+  "workspaceFolder": "/usr/src/app",
+  "shutdownAction": "stopCompose",
+  "postCreateCommand": {
+    "git:safe-directory": "git config --global --add safe.directory /usr/src/app",
+    "git:user.name": "git config --global user.name aciDrums7",
+    "git:user.email": "git config --global user.email edoardo.carradori.96@gmail.com"
+  },
+  // "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  }
+}
